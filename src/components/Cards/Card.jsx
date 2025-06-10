@@ -5,24 +5,25 @@ import React from "react";
 import {BsArrowRight} from "react-icons/bs";
 const peopleData = [
     {
-        name: "Asfak Ahmed",
-        title: "Founder & CEO of ZenUI Library",
-        description: "Asfak Ahmed is a professional Front-End Web Developer. Born on 12 Oct 2004. He’s known for creating ZenUI.",
+        name: "C++",
+        title: "Master Object-Oriented Programming",
+        description: "Learn the fundamentals of C++ including object-oriented concepts, memory management, and data structures. Ideal for competitive programming and game development.",
         image: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
     },
     {
-        name: "Ritika Sharma",
-        title: "Lead UI/UX Designer at PixelCraft",
-        description: "Ritika specializes in designing intuitive, user-first interfaces. She’s passionate about design systems and accessibility.",
+        name: "Java",
+        title: "Build Scalable Applications",
+        description: "Dive into Java to understand OOP, file handling, multithreading, and more. Perfect for Android development, backend systems, and enterprise-grade applications.",
         image: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg", 
     },
     {
-        name: "Rohan Mehta",
-        title: "Backend Architect at CodeNest",
-        description: "Rohan is a backend specialist with a love for scalable systems and clean APIs. He’s worked with Node.js and Laravel.",
-        image: "./ms_office.png", 
+        name: "MS Office",
+        title: "Boost Productivity Skills",
+        description: "Master essential tools like Word, Excel, and PowerPoint to enhance your productivity and presentation skills. Great for students, professionals, and job seekers.",
+        image: "https://github.com/Anticoder03/coaching_web/blob/main/src/components/Cards/ms_office.png?raw=true", 
     }
 ];
+
 
 const Card = () => {
 
@@ -30,7 +31,7 @@ const Card = () => {
         <>
         
 {/* course title in center */}
-        <h1 className="text-center text-[2rem] font-semibold dark:text-[#abc2d3] text-[#424242] mt-12">Our Course</h1>
+        <h1 id="course" className="text-center text-[2rem] font-semibold dark:text-[#abc2d3] text-[#424242] mt-12">Our Course</h1>
       <div className="flex flex-col md:flex-row items-stretch justify-center gap-5 w-full mt-10 p-5">
     {peopleData.map((person, index) => (
         <div
